@@ -54,6 +54,13 @@ var temp = '';
 //     });
 // }
 
+//-----------------------------------------------------------------------------------------------
+app.get('/', (request, response) => {
+    response.render('main', {
+    	temp:"This is just Temperate static words"
+    });
+});
+
 //------------------------------app.list to the port--------------------------------------------------
 app.listen(port, () => {
     console.log(`Server is up on the port ${port}`);
